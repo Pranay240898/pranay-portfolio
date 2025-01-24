@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pranay Godi - Portfolio</title>
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome for GitHub Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Background gradient */
+    body {
+      background: linear-gradient(135deg, #e0f7fa, #b3e5fc);
+    }
+    /* Card Styling */
+    .card {
+      background: linear-gradient(135deg, #D4B9F6, #F6D1D1);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+    .card h3 {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: #1a1a1a; /* Dark Text */
+    }
+    .card p {
+      margin-bottom: 1rem;
+      color: #4a4a4a; /* Muted text */
+    }
+    .tag {
+      display: inline-block;
+      background-color: #fff;
+      color: #4a4a4a;
+      border-radius: 15px;
+      padding: 0.25rem 0.75rem;
+      font-size: 0.875rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .footer-icon {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    .github-icon {
+      font-size: 1.5rem;
+      color: #333;
+      transition: 0.3s ease;
+    }
+    .github-icon:hover {
+      color: #f0d0f3;
+    }
+    /* Hero Section */
+    .hero-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 0 2rem;
+      gap: 4rem;
+    }
+    .hero-content {
+      max-width: 600px;
+      text-align: left;
+    }
+    .hero-img {
+      border-radius: 9999px;
+      width: 300px;
+      height: 300px;
+      border: 6px solid white;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    .hero-btn {
+      background-color: #007BFF;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      transition: 0.3s;
+      display: inline-block;
+      margin-top: 1rem;
+      width: 250px;
+    }
+    .hero-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body class="font-sans bg-gradient-to-br from-blue-50 to-blue-100">
+
+  <!-- Navbar Section -->
+  <nav class="bg-black text-white py-4 fixed w-full top-0 left-0 z-10">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-semibold">Pranay Godi</h1>
+      <div class="space-x-4">
+        <a href="#about" class="hover:text-gray-400">About</a>
+        <a href="#education" class="hover:text-gray-400">Education</a>
+        <a href="#experience" class="hover:text-gray-400">Experience</a>
+        <a href="#projects" class="hover:text-gray-400">Projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section (Main Banner) -->
+  <section class="flex items-center justify-between px-10 py-20">
+    <!-- Left Section with Name, Salutation, and Description -->
+    <div class="max-w-md text-left">
+      <h1 class="text-5xl font-bold text-gray-800">HI, I'm PRANAY GODI</h1>
+      <p class="text-xl mt-2 text-gray-600">Java Software Engineer</p>
+      <p class="text-lg mt-4 text-gray-600">Crafting robust and scalable software solutions with precision and innovation.</p>
+      <div class="mt-6 flex flex-col gap-4">
+        <a href="http://www.linkedin.com/in/pranay-godi-17425a188" class="hero-btn">Connect on LinkedIn</a>
+        <a href="https://github.com/Pranay240898" class="hero-btn">View on GitHub</a>
+        <a href="/mnt/data/Pranay_WD_Resume.pdf" download class="hero-btn">Resume</a>
+      </div>
+    </div>
+
+    <!-- Right Section with Profile Image -->
+    <div>
+      <img src="profile.jpg" alt="Pranay Godi" class="w-72 h-72 rounded-full border-4 border-white shadow-lg">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-50">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold text-black mb-6">About Me</h2>
+      <p class="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
+        I am a passionate Java Software Engineer with experience in developing enterprise-level applications and scalable cloud solutions. I specialize in building robust back-end systems, automating workflows, and designing innovative solutions. With a focus on precision and efficiency, I thrive in collaborative environments and aim to continually enhance my skills by working on challenging projects.
+      </p>
+      <h3 class="text-2xl font-semibold text-gray-700">Skills</h3>
+      <div class="mt-4 flex flex-wrap justify-center gap-4">
+        <span class="tag">Java</span>
+        <span class="tag">Spring Boot</span>
+        <span class="tag">React.js</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">AWS</span>
+        <span class="tag">MySQL</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold text-black mb-6">Education</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="card">
+          <h3>Master of Engineering in Computer Science</h3>
+          <p>Oregon State University</p>
+          <p>GPA: 3.9/4.0</p>
+        </div>
+        <div class="card">
+          <h3>Bachelor of Technology (B.Tech) in Computer Science</h3>
+          <p>C.V.R College of Engineering</p>
+          <p>GPA: 3.8/4.0</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Experience Section -->
+  <section id="experience" class="py-20 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold text-black mb-6">Professional Experience</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="card">
+          <h3>Java Software Engineer</h3>
+          <p>Tek International Inc (Jun 2023 – Present)</p>
+          <ul class="list-disc ml-5 mt-4">
+            <li>Developed scalable Java applications with Spring Boot and integrated AWS/Azure for cloud adoption.</li>
+            <li>Created AI-driven automation solutions, reducing time-to-value by 50%.</li>
+            <li>Optimized multi-threaded Java applications for better performance and resource utilization.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Software Engineer</h3>
+          <p>Gainwell Technologies (Sep 2022 - Jun 2023)</p>
+          <ul class="list-disc ml-5 mt-4">
+            <li>Developed microservices with Java Spring Boot, Angular, and Node.js, improving system efficiency.</li>
+            <li>Optimized database efficiency with caching strategies, reducing data retrieval times by 35%.</li>
+            <li>Automated CI/CD pipelines with Jenkins, increasing deployment speed by 40%.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Software Developer</h3>
+          <p>Korbyt (Jun 2019 - May 2021)</p>
+          <ul class="list-disc ml-5 mt-4">
+            <li>Built a workspace management platform using React.js and .NET Framework.</li>
+            <li>Enhanced query efficiency and data integrity by optimizing MySQL operations.</li>
+            <li>Maintained Linux system operations with 99.8% uptime, ensuring reliable services.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section id="projects" class="py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold text-black mb-6">Featured Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card">
+          <h3>Doctor-Patient Appointment Portal</h3>
+          <p>Developed a web-based platform for managing doctor-patient appointments, patient records, and scheduling consultations.</p>
+          <div class="mt-2">
+            <span class="tag">React.js</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Express</span>
+            <span class="tag">MongoDB</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>AI-Powered Chatbot</h3>
+          <p>Built an AI-powered chatbot to streamline onboarding for cloud services, reducing response time by 50%.</p>
+          <div class="mt-2">
+            <span class="tag">OpenAI</span>
+            <span class="tag">Python</span>
+            <span class="tag">AWS</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Resident Service Portal</h3>
+          <p>Designed a Java-based portal with caching mechanisms, improving response times for users accessing services.</p>
+          <div class="mt-2">
+            <span class="tag">Java</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">React.js</span>
+            <span class="tag">MySQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-black text-white py-6 text-center">
+    <p>&copy; 2025 Pranay Godi</p>
+  </footer>
+
+  <!-- Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</body>
+</html>
